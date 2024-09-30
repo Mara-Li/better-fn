@@ -1,5 +1,6 @@
 import "./main.css";
 
+import { EditorView } from "@codemirror/view";
 import { around } from "monkey-around";
 import {
   Editor,
@@ -16,7 +17,6 @@ import {
 import { BetterFnSettingTab, DEFAULT_SETTINGS } from "settings";
 
 import { BridgeEl, PopoverHandler } from "./processor";
-import { EditorView } from "@codemirror/view";
 
 type leafAction = Parameters<Workspace["iterateAllLeaves"]>[0];
 
